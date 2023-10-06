@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Concepts</title>
+</head>
+<body>
+    <div id="output"></div>
+
+    <script>
+        // a. String methods
+        var str = "Hello!";
+
+        
+        var strLength = str.length;
+        displayOutput("String Length: " + strLength);
+
+        
+        var strUpper = str.toUpperCase();
+        displayOutput("Uppercase: " + strUpper);
+
+        
+        var strLower = str.toLowerCase();
+        displayOutput("Lowercase: " + strLower);
+
+       
+        var substr = str.substring(0, 5);
+        displayOutput("Substring: " + substr);
+
+      
+        var replacedStr = str.replace("World", "Manya");
+        displayOutput("Replace: " + replacedStr);
+
+       // b. Number methods 
+        var num = 42;
+
+      
+        var numStr = num.toString();
+        displayOutput("Number to String: " + numStr);
+
+        
+        var numFixed = num.toFixed(2);
+        displayOutput("Fixed Decimal: " + numFixed);
+
+      
+        var maxNum = Math.max(10, 20);
+        displayOutput("Max: " + maxNum);
+
+        
+        var minNum = Math.min(5, 15);
+        displayOutput("Min: " + minNum);
+
+        
+        var randomNum = Math.random();
+        displayOutput("Random: " + randomNum);
+
+        // c. Array methods
+        var arr = [1, 2, 3, 4, 5, "six", "seven"];
+
+        
+        arr.push(8);
+        displayOutput("Push: " + arr);
+
+        
+        arr.pop();
+        displayOutput("Pop: " + arr);
+
+        
+        arr.unshift(-1, 0);
+        displayOutput("Unshift: " + arr);
+
+        
+        arr.shift();
+        displayOutput("Shift: " + arr);
+
+        
+        var indexOfSix = arr.indexOf("six");
+        displayOutput("Index of 'six': " + indexOfSix);
+
+        // d. Date methods
+        var currentDate = new Date();
+
+       
+        var fullYear = currentDate.getFullYear();
+        displayOutput("Full Year: " + fullYear);
+
+       
+        var month = currentDate.getMonth();
+        displayOutput("Month: " + month);
+
+        
+        var dayOfWeek = currentDate.getDay();
+        displayOutput("Day of the Week: " + dayOfWeek);
+
+        
+        var date = currentDate.getDate();
+        displayOutput("Date: " + date);
+
+        
+        var currentTime = currentDate.toLocaleTimeString();
+        displayOutput("Time: " + currentTime);
+
+        // e. Function Methods
+        function greet(name) {
+            displayOutput("Hello, " + name + "!");
+        }
+
+        
+        greet("John");
+
+        function add(a, b) {
+            return a + b;
+        }
+
+        
+        var result = add(3, 4);
+        displayOutput("Addition Result: " + result);
+
+        
+        function displayOutput(outputText) {
+            var outputDiv = document.getElementById("output");
+            outputDiv.innerHTML += outputText + "<br>";
+        }
+    </script>
+</body>
+</html>
